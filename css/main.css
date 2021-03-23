@@ -210,6 +210,87 @@ nav{
     align-self: self-start;
 }
 
+.blog-main{
+    display: grid;
+    grid-row: auto;
+    row-gap: 40px;
+}
+
+.blogspot-img-section{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+
+.blogspot-img-section img{
+    grid-column: 2 / span 1;
+    width: 100%;
+}
+
+.blogpost-main-section{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+
+.blogpost-text-container{
+    grid-column: 2 / span 1;
+}
+
+.blogpost-text-container h3{
+    border-bottom: 1px solid #cdd2da; 
+    padding-bottom: 20px;
+}
+
+.blogpost-text-container article h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+
+.blogpost-text-container article p{
+    padding-bottom: 16px;
+    text-align: justify;
+}
+
+.contact-main-section{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    background-color: #e6e9ed;
+}
+
+.contact-main-container{
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    min-height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 20px;
+}
+
+.contact-container img{
+    width: 100px;
+}
+
+.contact-container div{
+    text-align: initial;
+}
+
+.contact-container div a{
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
 footer{
     display: grid;
     place-content: center;
