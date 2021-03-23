@@ -1,0 +1,121 @@
+:root{
+    /*Color*/
+    --green: #47cfac;
+    /*Font Family*/
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-roboto);
+}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+.index-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 1fr;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 90px;
+}
+
+.header-icons-container{
+    display: grid;
+    justify-items: self-end;
+    align-items: center;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 1fr;
+    background-color: var(--green);
+}
+
+.header-icons{
+    grid-column: 2 / span 1;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+}
+
+.header-icons span{
+    color: white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.nav-logo-container{
+    grid-column: 2 / span 1;
+}
+
+.nav-logo-container img{
+    width: 220px;
+}
+
+.nav-profile-link{
+    grid-column: 3 / span 1;
+    justify-self: self-end;
+}
+
+.nav-profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.index-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('../assets/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-content{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    margin-top: 80px;
+}
+
+.home-content p{
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: white;
+    text-align: center;
+}
+
+.home-content button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 50px;
+    background-color: #47cfac;
+}
+
+.home-content a{
+    font-weight: 700px;
+    font-size: 18px;
+}
