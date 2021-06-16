@@ -291,6 +291,54 @@ nav{
     margin-bottom: 5px;
 }
 
+.profile-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #e6e9ed;
+}
+
+.profile-main-container{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 320px 1fr;
+}
+
+.profile-image{
+    width: 320px;
+}
+
+.profile-image img{
+    width: 100%;
+}
+
+.profile-info h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.projects-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.projects-section h3{
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    row-gap: 20px;
+    column-gap: 15px;
+}
+
 footer{
     display: grid;
     place-content: center;
